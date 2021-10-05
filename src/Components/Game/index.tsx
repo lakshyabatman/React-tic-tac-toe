@@ -91,15 +91,18 @@ const GameView = () => {
     
 
     return (
-            <>
+            <div className="flex justify-center	items-center h-screen	w-screen">
+
             {!loading ? (
-                <>
-                    {getGameView(gameStatus)}
-                </>
+                    <div className="w-60 text-center">
+                     {getGameView(gameStatus)}
+                    </div>
+                    
             ) : (
                 <h1>Loading</h1>
             )}
-            </>
+            </div>
+
     )
 }
 

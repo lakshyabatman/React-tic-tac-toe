@@ -26,14 +26,14 @@ const BoardView:React.FC<IBoardView> = (props) => {
 
     
     return (
-        <>
-        <div className="grid grid-cols-3 bg-gray-500 gap-2 w-2/12" >
+        <div className="text-center	">
+        <div className="grid grid-cols-3 bg-gray-500 gap-2 " >
             {boardOutput}
         </div>
-        <button onClick={undoClickHandler}>
+        <button onClick={undoClickHandler} className="mt-6 bg-gray-300	px-4 py-2">
             Undo
         </button>
-        </>
+        </div>
     )
 }
 

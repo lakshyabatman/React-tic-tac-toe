@@ -8,7 +8,7 @@ const CellView:React.FC<ICellView> = (props) => {
         props.cell === CellState.EMPTY && props.onClick()
     }
     return (
-        <div className="bg-white h-12 cursor-pointer" onClick={cellClickHandler}>{props.cell}</div>
+        <div className="bg-white h-12 cursor-pointer flex justify-center items-center" onClick={cellClickHandler}>{props.cell}</div>
     )
 }
 
