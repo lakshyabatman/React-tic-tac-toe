@@ -12,7 +12,7 @@ export interface GlobalState {
     prevStep : Coordinate[]
 }
 
-const initialState : GlobalState = {
+export const initialState : GlobalState = {
     loading : false,
     turn : Player.Player_1,
     gameStatus: GameStatus.NOT_STARTED,

@@ -26,7 +26,7 @@ const BoardView:React.FC<IBoardView> = (props) => {
 
     
     return (
-        <div className="text-center	">
+        <div className="text-center	" data-testid='board'>
         <div className="grid grid-cols-3 bg-gray-500 gap-2 " >
             {boardOutput}
         </div>
